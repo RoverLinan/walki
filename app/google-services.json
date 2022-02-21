@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "863379690741",
+    "firebase_url": "https://walki-pe.firebaseio.com",
+    "project_id": "walki-pe",
+    "storage_bucket": "walki-pe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863379690741:android:3e63569f1ae460d3bae1bc",
+        "android_client_info": {
+          "package_name": "com.walkiperu.www.walki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863379690741-hanvf65qg5sgr52e8agmn0d9qhg075ah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.walkiperu.www.walki",
+            "certificate_hash": "0996e684f9d569435c69fc13c1d329f6a310f4e7"
+          }
+        },
+        {
+          "client_id": "863379690741-0bfop7s0ib8jde472ctn7vdaah07qhkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpwFjRvLu3e1_v8yuH--Uoj7cpvihCPec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863379690741-0bfop7s0ib8jde472ctn7vdaah07qhkd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

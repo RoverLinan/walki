@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".RequestAcceptActivity">
+
+
+    <FrameLayout
+        android:id="@+id/ara_frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/liner_dialog"
+
+        android:background="@drawable/bg_perfil_dialog_pedido2"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dialog_img_user"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="1dp"
+            android:src="@drawable/photo_user">
+
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/ara_name_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Johana"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/ara_score"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.9"
+                android:drawableLeft="@drawable/ic_start"
+                android:drawablePadding="3dp"
+                android:textColor="#DBDBDB">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ara_b_rout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/liner_dialog"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#445FEE"
+        android:drawableRight="@drawable/ic_near_me_black_24dp"
+        android:drawablePadding="3dp"
+        android:text="Indicaciones"
+        android:textColor="#FFFFFF">
+
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/liner_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/ara_b_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Cancelar"
+            android:textColor="@color/colorBlackMate">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ara_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liner_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:text="2:29"
+        android:textColor="#F44336"
+        android:textSize="45sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/liner_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_info_pedido3"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_info_pedido2"
+            android:layout_margin="7dp"
+            android:translationZ="2dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp">
+
+
+                <TextView
+                    android:id="@+id/ara_locationA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_svg_salida_1"
+                    android:drawablePadding="10dp"
+                    android:text=" Avenida los laures #458"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/ara_locationB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:drawableLeft="@drawable/ic_destino_svg"
+                    android:drawablePadding="10dp"
+                    android:text=" Plaza de armas de trujillo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/ara_coment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="5"
+                    android:text="Auto limpio y sin ambientador"
+                    android:textSize="12dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic">
+
+
+                </TextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/dialog_opc_visa"
+                        android:layout_width="@dimen/sizeIconPedidoWidth"
+                        android:layout_height="@dimen/sizeIconPedidoHeight"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_visa"
+                        android:visibility="gone">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/dialog_opc_aire"
+                        android:layout_width="@dimen/sizeIconPedidoWidth"
+                        android:layout_height="@dimen/sizeIconPedidoHeight"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_airec"
+                        android:visibility="gone">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/dialog_opc_polari"
+                        android:layout_width="@dimen/sizeIconPedidoWidth"
+                        android:layout_height="@dimen/sizeIconPedidoHeight"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_polari"
+                        android:visibility="gone">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/dialog_opc_mas4"
+                        android:layout_width="@dimen/sizeIconPedidoWidth"
+                        android:layout_height="@dimen/sizeIconPedidoHeight"
+                        android:src="@drawable/ic_mas4"
+                        android:visibility="gone">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ara_ofert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:text="PEN 15"
+                    android:textColor="#FFEB3B"
+                    android:textSize="18sp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="35dp"
+                android:layout_margin="4dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/ara_b_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="@drawable/ic_call2"
+                        android:layout_margin="1dp"
+
+                        >
+
+                    </Button>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/ara_b_sos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_margin="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/ic_poli2"
+                        >
+
+                    </Button>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ara_b_aceptar"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_fondo_btn"
+                android:fontFamily="casual"
+                android:text="¡Eh llegado!"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sr_title">Bienvenido WalkiLover !</string>
+    <string name="sr_subtitle">Completa los siguientes cuadros y comienza a disfrutar  de tus viajes.</string>
+    <string name="sr_foto">Foto</string>
+    <string name="sr_nombre">Nombre</string>
+    <string name="sr_apell">Apellidos</string>
+    <string name="sr_email">Correo (opcional)</string>
+    <string name="sr_final">Finalizar</string>
+
+
+
+</resources>

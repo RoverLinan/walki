@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:id="@+id/dialog_frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/liner_dialog"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_info_pedido2"
+        android:translationZ="2dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_info_pedido4"
+            android:elevation="3dp"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dialog_img_user"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="1dp"
+                android:src="@drawable/photo_user">
+
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/dialog_name_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lissy"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#1A1919">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/dialog_score"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_start"
+                    android:drawablePadding="3dp"
+                    android:text="4.9"
+                    android:textColor="#585858">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:translationZ="2dp"
+            android:orientation="horizontal">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp">
+
+
+                <TextView
+                    android:id="@+id/dialog_salida"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_svg_salida_1"
+                    android:drawablePadding="10dp"
+                    android:text=" Avenida los laures #458"
+                    android:textColor="#292929"
+                    android:textSize="18dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/dialog_destino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:drawableLeft="@drawable/ic_destino_svg"
+                    android:drawablePadding="10dp"
+                    android:text=" Plaza de armas de trujillo"
+                    android:textColor="#353434"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/dialog_coment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="5"
+                    android:text="Auto limpio y sin ambientador"
+                    android:textSize="12dp"
+                    android:textColor="#474747"
+                    android:textStyle="italic">
+
+
+                </TextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/dialog_opc_visa"
+                        android:layout_width="@dimen/sizeIconPedidoWidth"
+                        android:layout_height="@dimen/sizeIconPedidoHeight"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_visa"
+                        android:visibility="gone">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/dialog_opc_aire"
+                        android:layout_width="@dimen/sizeIconPedidoWidth"
+                        android:layout_height="@dimen/sizeIconPedidoHeight"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_airec"
+                        android:visibility="gone">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/dialog_opc_polari"
+                        android:layout_width="@dimen/sizeIconPedidoWidth"
+                        android:layout_height="@dimen/sizeIconPedidoHeight"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_polari"
+                        android:visibility="gone">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/dialog_opc_mas4"
+                        android:layout_width="@dimen/sizeIconPedidoWidth"
+                        android:layout_height="@dimen/sizeIconPedidoHeight"
+                        android:src="@drawable/ic_mas4"
+                        android:visibility="gone">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dialog_oferta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="3dp"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:text="PEN 15"
+                    android:textColor="#F44336"
+                    android:textSize="18sp">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_fondo_btn"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_menosOferta"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_remove_circle_outline_black_24dp">
+
+            </Button>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_dialog_ofertar"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:background="@drawable/ic_svg_boton_fondo"
+            android:fontFamily="casual"
+            android:text="PEN 15.5"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans">
+
+        </Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_masOferta"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_add_circle_outline_black_24dp">
+
+            </Button>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

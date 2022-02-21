@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SelectorAdressMap">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <fragment
+            android:id="@+id/map_select_adress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment">
+        </fragment>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_ubicacion"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:src="@drawable/ic_point_salida_svg">
+
+
+            </ImageView>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_message_sadress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:text="Seleccione su punto de salida"
+            android:textColor="@color/colorBlackMate"
+            android:textSize="22dp">
+
+        </TextView>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/ic_svg_boton_fondo"
+            android:onClick="returnData"
+            android:text="listo"
+            android:textSize="18dp">
+
+
+        </Button>
+
+
+    </FrameLayout>
+
+
+    <TextView
+
+        android:id="@+id/tv_adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlackMate"
+        android:alpha=".75"
+        android:layout_marginBottom="100dp"
+        android:padding="15dp"
+        android:textColor="@color/colorWhite"
+        android:text="Su direccion"
+        android:textAlignment="center"
+        android:textSize="18dp">
+
+    </TextView>
+
+
+
+
+
+</RelativeLayout>

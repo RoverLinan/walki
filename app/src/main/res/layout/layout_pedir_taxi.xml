@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10sp"
+    android:background="@drawable/backg_pedir_tax"
+    android:padding="15sp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutSalida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/et_salida_taxi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:drawableLeft="@drawable/ic_svg_salida_1"
+                    android:drawablePadding="7sp"
+                    android:hint="Salida"
+                    android:clickable="true"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="10sp"
+                    android:textColor="@color/colorPrincipal"
+                    android:textColorHint="@color/colorWhite" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColorHint="@color/colorWhite">
+
+
+                <EditText
+                    android:id="@+id/et_destino_taxi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:drawableLeft="@drawable/ic_destino_svg"
+                    android:drawablePadding="7sp"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="10sp"
+                    android:hint="Destino"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorWhite">
+
+                <EditText
+                    android:id="@+id/et_precioTaxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorWhite"
+                    android:drawableLeft="@drawable/ic_monetization_on_black_24dp"
+                    android:drawablePadding="7sp"
+                    android:paddingLeft="0sp"
+                    android:ems="10"
+                    android:hint="Oferta"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textSize="30dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Switch
+                android:id="@+id/switch_visa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textOff="o"
+                android:textOn="|"
+                android:showText="true"
+                android:text="Visa                                 "
+                android:textColor="@color/colorWhite"
+                />
+
+            <Switch
+                android:id="@+id/switch_polari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="o"
+                android:textOn="|"
+                android:showText="true"
+                android:layout_marginTop="10dp"
+                android:text="Polarizado                     "
+                android:textColor="@color/colorWhite"
+             />
+
+            <Switch
+                android:id="@+id/switch_aireAcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textOff="o"
+                android:textOn="|"
+                android:showText="true"
+                android:text="Aire acondicionado     "
+                android:textColor="@color/colorWhite" />
+
+            <Switch
+                android:id="@+id/switch_mas4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textOff="o"
+                android:textOn="|"
+                android:showText="true"
+                android:text="+4 pasajeros                 "
+                android:textColor="@color/colorWhite" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorWhite">
+
+                <EditText
+                    android:id="@+id/et_comentTaxi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_message_black_24dp"
+                    android:drawablePadding="7sp"
+                    android:paddingLeft="0sp"
+                    android:paddingRight="10sp"
+                    android:autoSizeMaxTextSize="@dimen/activity_vertical_margin"
+                    android:backgroundTint="@color/colorWhite"
+                    android:ems="10"
+                    android:hint="Comentarios"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+
+                android:id="@+id/button66"
+                android:layout_width="236dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_svg_boton_fondo"
+                android:onClick="createRequest"
+                android:text="Solicitar un taxi"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

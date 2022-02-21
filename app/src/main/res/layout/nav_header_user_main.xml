@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/liner_nav_header"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/bg_main_user"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_photo_um"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/ic_ar_foto" />
+
+    <TextView
+        android:id="@+id/tv_name_um"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lissy Liñan Burgos"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_email_um"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="lissylb_98@gmail.com"
+        android:textAlignment="center"
+        android:textColor="@color/colorFondoRegis"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_phone_um"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="+51976057870"
+        android:textColor="@color/colorPrincipal"
+        android:textSize="12sp" />
+
+</LinearLayout>

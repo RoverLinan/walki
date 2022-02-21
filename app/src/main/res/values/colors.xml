@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1e1c1c</color>
+    <color name="colorPrimaryDark">#eee416</color>
+    <color name="colorPrincipal">#F7DD00</color>
+    <color name="colorBlack">#DFD0D0</color>
+    <color name="colorBlackMate">#1e1c1c</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorFondoRegis">#dfe4de</color>
+    <color name="colorPedirTax">#1E1C1C</color>
+<color name="negroMate">#494747</color>
+</resources>
